@@ -7,8 +7,7 @@ body {
   padding: 0;
   font-family: 'Courier', sans-serif;
   color: #353c46;
-  background: #e6e5e2;
-
+  background:#f4efeb;
 }
 a {
   text-decoration: none;
@@ -60,10 +59,14 @@ main.nav {
 }
 .introduction {
 margin: 30px 50px 30px 50px;
+padding-top: none;
+font-size: 1.5rem;
 }
-
+.tag1{
+padding-bottom: 1.5rem;
+}
 .centralsection {
-margin-top: 450px;
+margin-top: 400px;
 padding-top: 50px;
 background-color: white;
 text-align: center;
@@ -72,12 +75,10 @@ text-align: center;
 h1 {
 font-size: 1.8rem;
 text-align: center;
-padding-bottom: 50px;
 }
 
 
 img {
-  margin-top: 50px;
   display:block;
   margin:0 auto;
   width: 400px;
@@ -85,41 +86,97 @@ img {
   border: 3px solid black;
   transition: all .5s;
 }
-/* Layout Styles ------------------ */
-.markentingpage {
-  width: 35%;
+
+p {
+  display:block;
+  margin:0 auto;
+  width: 400px;
+  height: 125px;
+}
+
+.marketingpage {
+  width: 33.3%;
   padding-left: 50px;
   padding-right: 50px;
   margin: auto;
   max-width: 960px;
 }
+.searchpage {
+  width: 33.3%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+.travelapp {
+  width: 33.3%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+.mapoffavoritespots {
+  width: 33.3%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+.photogallery {
+  width: 33.3%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+.calculator {
+  width: 33.3%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+.bottomcom {
+  display:block;
+  text-align:center;
+  margin:0 auto;
+  width: 400px;
+  height: 100px;
 
-
-
+}
+.Contact {
+  padding-bottom: 3rem;
+text-align:center;
+border-bottom: 2px solid;
+}
 /* Floated Columns ------------------ */
 .profile-image,
 .introduction {
-  width: 46.5%;
+width: 46.5%;
 }
 .profile-image {
-  float: right;
+float: right;
 }
 .introduction {
  float: left;
 }
-
-.marketingpage,
-.searchpage {
-  float: right;
+.marketingpage {
+float: right;
 }
-.travelapp,
+.searchpage {
+float: left;
+}
+.travelapp {
+float: right;
+}
 .mapoffavoritespots {
 float: left;
 }
-
-.photogallery,
-.calculator {
+.photogallery {
 float: right;
+}
+.calculator {
+float: left;
 }
 
 /* Float Clearfix ------------------ */

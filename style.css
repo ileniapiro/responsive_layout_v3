@@ -3,7 +3,7 @@
 }
 /* Base Styles -------------------- */
 body {
-  margin: 2rem;
+  text-align: center;
   padding: 0;
   font-family: 'Courier', sans-serif;
   color: #353c46;
@@ -16,19 +16,21 @@ a {
 
 main.nav {
   width: 100%;
-  min-height: 30px;
-  padding: 20px;
+  height: 1.8rem;
+  padding: 0;
   position: fixed;
   text-align: center;
 }
 .nav {
+  text-align: center;
   font-size: 1rem;
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  font-weight: bold;
   list-style-type: none;
-  margin: 0 auto;
+  margin-top: 1rem;
   padding: 0;
+
 }
 
 .nav .name {
@@ -38,38 +40,33 @@ main.nav {
     color: black;
 }
 .nav li {
-  padding: 10px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
 }
 .nav a {
   transition: all .5s;
 }
 .nav a:hover {
-  color: pink
+  color: lightgrey;
 }
 
-.main-header {
-
-  margin: 30px 50px 30px 50px;
 }
-.main-header .profile-image {
-  margin: 30px 50px 30px 50px;
-  width: 400px;
-  height: 280px;
+.profile-image {
+  width: 33.3%;
+  max-width: 100%;
   border: 3px solid black;
 }
 .introduction {
-margin: 30px 50px 30px 50px;
-padding-top: none;
 font-size: 1.5rem;
+margin: 0 auto;
+padding-top: 6rem;
 }
 .tag1{
 padding-bottom: 1.5rem;
 }
 .centralsection {
-margin-top: 400px;
-padding-top: 50px;
 background-color: white;
 text-align: center;
+margin: 1rem;
 }
 
 h1 {
@@ -81,8 +78,7 @@ text-align: center;
 img {
   display:block;
   margin:0 auto;
-  width: 400px;
-  height: 250px;
+  max-width: 100%;
   border: 3px solid black;
   transition: all .5s;
 }
@@ -149,13 +145,16 @@ padding-bottom: 3rem;
 text-align:center;
 border-bottom: 2px solid;
 }
+
+/* Layout Styles ------------------ */
+
+
 /* Floated Columns ------------------ */
-.profile-image,
 .introduction {
 width: 46.5%;
 }
 .profile-image {
-float: right;
+   float: right;
 }
 .introduction {
  float: left;
@@ -188,3 +187,115 @@ float: left;
 
 
 /* Media Queries --------------------*/
+@media (max-width: 1024px) {
+ nav {
+   width: 100%;
+
+ }
+ p {
+  width:100%;
+  color: black;
+ }
+ img {
+width: 90%;
+}
+
+.header {
+width: 100%;
+}
+
+.profile-image {
+max-width: 80%;
+}
+
+.centralsection {
+  width: 100%;
+ }
+
+.article {
+width:100%;
+
+}
+ .introduction {
+  width:100%;
+  padding-top: 2rem;
+
+   }
+}
+@media (max-width: 768px) {
+
+[class*="col-"] {
+width: 100%;
+}
+
+nav {
+  width: 100%;
+
+}
+nav.name {
+  width: 100%;
+}
+
+p {
+   width:100%;
+   float: none;
+ }
+
+img {
+  width: 80%;
+  }
+  .header {
+  width: 100%;
+  }
+
+.profile-image {
+float:none;
+width: 80%;
+  }
+.header {
+max-width:100%;
+float:none,
+
+}
+.centralsection {
+  width: 100%;
+  padding: 1.1rem;
+  margin: 0;
+}
+
+.introduction {
+ width:100%;
+ font-size: 1rem;
+ margin: 0 auto;
+  }
+
+.marketingpage {
+width: 100%;
+float: none;
+}
+
+.searchpage {
+  width: 100%;
+  float: none;
+}
+.travelapp {
+width: 100%;
+float: none;
+}
+.mapoffavoritespots {
+  width: 100%;
+  float: none;
+}
+.photogallery {
+  width: 100%;
+  float: none;
+}
+.calculator {
+  width: 100%;
+  float: none;
+}
+
+.main-footer {
+  width: 100%;
+}
+}

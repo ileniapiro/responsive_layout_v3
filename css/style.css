@@ -5,7 +5,7 @@
 body {
   text-align: center;
   padding: 0;
-  font-family: 'Courier', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #353c46;
   background:#f4efeb;
 }
@@ -52,7 +52,6 @@ main.nav {
 .header {
   text-align: center;
   display: block;
-}
 }
 .profile-image {
   width: 33.3%;
@@ -269,11 +268,9 @@ width: 100%;
   }
 .header {
 max-width:100%;
-float:none,
 
 }
 .centralsection {
-  width: 100%;
   padding: 1.1rem;
   margin: 0;
 }

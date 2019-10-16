@@ -14,10 +14,10 @@ a {
   color: #353c46;
 }
 nav {
-  width: 90%;
+  width: 100%;
   display: block;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 li {
   list-style-type: none;
@@ -25,10 +25,13 @@ li {
   text-align: center;
   margin-bottom: 15px;
 }
-
+nav ul {
+  padding-left: 0;
+  text-align: center;
+}
 p {
   text-align: center;
-font-size: 1em;
+  font-size: 1em;
 }
 
 img {
@@ -49,9 +52,9 @@ h2 {
   width: 90%;
 }
 .name {
-font-size: 1.5em;
-background-color: inherit;
-text-align: center;
+  font-size: 1.5em;
+  background-color: inherit;
+  text-align: center;
 }
 .introduction {
   text-align: center;
@@ -74,15 +77,37 @@ text-align: center;
 .bottomcom {
   text-align: center;
 }
-.contact li {
+.info li {
 text-align: center;
 background-color: inherit;
 }
-
+.info {
+  padding-left: 0;
+}
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+.bottomnav {
+  width: 100%;
+  display: block;
+}
+.bottomnav ul {
+  padding-left: 0;
+  text-align: center;
+}
+.btmbtn {
+  position: absolute;
+  left: -1000px;
+}
+.name2 {
+  float: left;
+  font-size: 1.5em;
+  background-color: inherit;
+}
+.backtop {
+  float:right;
 }
 /* Media Queries --------------------*/
 @media (min-width: 1024px) {
@@ -151,4 +176,5 @@ background-color: inherit;
     clear:both;
     width:100%;
   }
+
 }

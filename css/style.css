@@ -3,312 +3,152 @@
 }
 /* Base Styles -------------------- */
 body {
-  text-align: center;
   padding: 0;
+  margin:0;
   font-family: 'Poppins', sans-serif;
   color: #353c46;
-  background:#f4efeb;
+  background: #e5e7e9;
 }
 a {
   text-decoration: none;
   color: #353c46;
 }
-
-main.nav {
-  width: 100%;
-  height: 1.8rem;
-  padding: 0;
-  position: fixed;
-  text-align: center;
-}
-.nav {
-  text-align: center;
-  font-size: 1rem;
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-  list-style-type: none;
-  margin-top: 1rem;
-  padding: 0;
-
-}
-
-.name {
-  font-size: 2rem;
-    display: block;
-    margin-right: auto;
-    color: black;
-}
-.nav li {
-  padding: 10px 10px 10px 10px;
-}
-.nav a {
-  transition: all .5s;
-}
-.nav a:hover {
-  color: lightgrey;
-}
-
-.header {
-  text-align: center;
+nav {
+  width: 90%;
   display: block;
+  padding-left: 0;
+  padding-right: 0;
 }
-.profile-image {
-  width: 33.3%;
-  max-width: 100%;
-  border: 3px solid black;
-}
-.introduction {
-font-size: 1.5rem;
-margin: 1rem;
-padding-top: 6rem;
-width: 50%;
-}
-.tag1{
-padding-top: 1.5rem;
-padding-bottom: 1.5rem;
-margin-bottom: 0;
-}
-.centralsection {
-background-color: white;
-text-align: center;
-margin: 1rem;
-}
-
-h1 {
-font-size: 1.8rem;
-text-align: center;
-}
-
-
-img {
-  display:block;
-  margin:0 auto;
-  max-width: 100%;
-  border: 3px solid black;
-  transition: all .5s;
+li {
+  list-style-type: none;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 p {
-  display:block;
-  margin:0 auto;
-  width: 400px;
-  height: 125px;
+  text-align: center;
+font-size: 1em;
 }
 
-.marketingpage {
-  width: 33.3%;
-  padding-left: 50px;
-  padding-right: 50px;
+img {
+    width: 100%;
+    text-align: center;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+ text-align: center;
+}
+.main-header {
+  display: block;
   margin: auto;
-  max-width: 960px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 90%;
 }
-.searchpage {
-  width: 33.3%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px;
-}
-.travelapp {
-  width: 33.3%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px;
-}
-.mapoffavoritespots {
-  width: 33.3%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px;
-}
-.photogallery {
-  width: 33.3%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px;
-}
-.calculator {
-  width: 33.3%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px;
-}
-.bottomcom {
-  display:block;
-  text-align:center;
-  margin:0 auto;
-  width: 400px;
-  height: 100px;
-
-}
-.Contact {
-padding-bottom: 3rem;
-text-align:center;
-border-bottom: 2px solid;
-}
-
-/* Layout Styles ------------------ */
-
-
-/* Floated Columns ------------------ */
-.profile-image {
-   float: right;
-   max-width: 40%;
+.name {
+font-size: 1.5em;
+background-color: inherit;
+text-align: center;
 }
 .introduction {
- float: left;
+  text-align: center;
 }
-.marketingpage {
-float: right;
+.profile-image {
+  text-align: center;
 }
-.searchpage {
-float: left;
-}
-.travelapp {
-float: right;
-}
-.mapoffavoritespots {
-float: left;
-}
-.photogallery {
-float: right;
-}
-.calculator {
-float: left;
+.centralsection {
+  background-color: white;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
-/* Float Clearfix ------------------ */
-.group:after {
+.main-footer {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.bottomcom {
+  text-align: center;
+}
+.contact li {
+text-align: center;
+background-color: inherit;
+}
+
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-
-
 /* Media Queries --------------------*/
-@media (max-width: 1024px) {
- nav {
-   width: 100%;
- }
-.name {
- width: 100%;
- text-align: left;
-   }
+@media (min-width: 1024px) {
 
- p {
-  width:100%;
-  color: black;
- }
- img {
-width: 100%;
-}
-
-.header {
-max-height: 380px;
-}
-
-.profile-image {
-max-width: 50%;
-float:none;
-}
-
-.centralsection {
-  width: 100%;
-  margin: 0;
-
- }
-
-.article {
-width:100%;
-
-}
- .introduction {
-  width:100%;
-  font-size: 1.1rem;
-  padding-top: 2rem;
-
-   }
-}
-@media (max-width: 768px) {
-
-[class*="col-"] {
-width: 100%;
-}
-
-nav {
-  width: 100%;
-
-}
-.name {
-  width: 100%;
-  line-height: 1.1;
-  font-size: 1.6rem;
-}
-
-p {
-   width:100%;
-   float: none;
- }
-
-img {
+  .group {
+    width:80%;
+    max-width: 1150px;
+  }
+  .main-header {
+  width:80%;
+  max-width: 1150px;
+  }
+  .centralsection {
   width: 80%;
+  max-width: 1150px;
   }
-  .header {
-  width: 100%;
+  .main-footer {
+  width:80%;
+  max-width: 1150px;
+  }
+}
+@media (min-width: 768px) {
+
+  .group {
+  width:90%;
+  margin: 0 auto;
+
+  }
+  .main-header {
+  width: 90%;
+  clear: both;
+  }
+  .centralsection {
+  width: 90%;
+  }
+  .marketingpage,
+  .searchpage,
+  .travelapp,
+  .mapoffavoritespots,
+  .photogallery,
+  .calculator {
+    width: 90%;
+    margin: 0 auto;
+    clear:both;
+  }
+  img {
+    width:90%,
+  }
+  h1 {
+    text-align: center;
+  }
+  .main-footer {
+  width:90%;
+  margin: 0 auto;
+
   }
 
-.profile-image {
-float:none;
-width: 100%;
+  .introduction {
+    font-size: 1em;
+    float: none;
+    width: 50%;
   }
-.header {
-max-width:100%;
-
-}
-.centralsection {
-  padding: 1.1rem;
-  margin: 0;
-}
-
-.introduction {
- width:100%;
- font-size: 1rem;
- margin: 0 auto;
+  .profile-image,
+  .introduction {
+    text-align: center;
+    clear:both;
+    width:100%;
   }
-
-.marketingpage {
-width: 100%;
-float: none;
-}
-
-.searchpage {
-  width: 100%;
-  float: none;
-}
-.travelapp {
-width: 100%;
-float: none;
-}
-.mapoffavoritespots {
-  width: 100%;
-  float: none;
-}
-.photogallery {
-  width: 100%;
-  float: none;
-}
-.calculator {
-  width: 100%;
-  float: none;
-}
-
-.main-footer {
-  width: 100%;
-}
-
 }

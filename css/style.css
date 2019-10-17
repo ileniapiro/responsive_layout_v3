@@ -70,6 +70,7 @@ h2 {
   background-color: white;
   padding-right: 1em;
   padding-left: 1em;
+  padding-top: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
@@ -91,11 +92,6 @@ h2 {
   border-bottom: solid #3d4957;
   border-width: thin;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .bottomnav ul {
   padding-left: 0;
   text-align: center;
@@ -112,66 +108,108 @@ h2 {
 .backtop {
   float:right;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* Media Queries --------------------*/
 @media (min-width: 1024px) {
 
-  .group {
-    width:80%;
-    max-width: 1150px;
+nav {
+  float: right;
+  width: 100%;
+  padding: 1.5em;
+}
+li {
+  float: right;
+  margin-right: 1em;
+}
+h1 {
+  padding-bottom: 1em;
+}
+.name {
+  float: left;
+  font-size: 2em;
+  display: inline;
+  text-align: center;
+  font-weight: 600;
   }
-  .main-header {
-    width:80%;
-    max-width: 1150px;
+.main-header {
+  width: auto;
+  clear: both;
   }
-  .centralsection {
-    width: 80%;
-    max-width: 1150px;
+.profile-image {
+  max-width: 35%;
+  margin-right: 4em;
   }
-  .main-footer {
-    width:80%;
-    max-width: 1150px;
+.introduction {
+  font-size: 1.5em;
+  max-width: 45%;
+  margin-left: 4em;
+  }
+.centralsection {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.main-footer {
+  width:80%;
+  max-width: 1150px;
   }
 }
 @media (min-width: 768px) {
 
-  nav {
-    width: 100%;
-    display: block;
-    float:right;
-    padding-top: 0.7em;
+.group {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+  display: block;
+  padding-top: 0.7em;
   }
-  li{
-    background-color:inherit;
-    display: inline-block;
-    margin-left: 15px;
+li{
+  background-color:inherit;
+  display: inline-block;
+  margin-left: 15px;
   }
-  img {
-    width:90%,
+h1 {
+  text-align: center;
   }
-  h1 {
-    text-align: center;
+  p {
+    padding-left: 2.2em;
+    padding-right: 2.2em;
   }
-  .body {
-    width:90%;
-    margin: 0 auto;
+.name {
+  font-size: 2em;
+  display: grid;
+  text-align: center;
+  font-weight: 600;
   }
-  .name {
-    font-size: 2em;
-    display: grid;
-    text-align: center;
-    font-weight: 600;
+.name2 {
+  float: left;
   }
-  .name2 {
-    float: left;
+.main-header {
+  width: 90%;
+  clear: both;
   }
-  .main-header {
-    width: 90%;
-    clear: both;
+.profile-image {
+  float: right;
+  width: 49%;
+  padding: 0.2em;
+  border: solid #3d4957;
+  border-width: thin;
   }
-  .centralsection {
-    text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
+.introduction {
+  float:left;
+  width: 49%;
+  text-align: left;
+  margin-top: 0;
+  padding: 0;
+  }
+.centralsection {
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
   }
 .marketingpage,
 .travelapp,
@@ -185,41 +223,36 @@ h2 {
   float: right;
   width: 49%;
 }
-  .introduction {
-    float:left;
-    width: 49%;
-    text-align: left;
-    margin: 0;
+.main-footer {
+  width:90%;
+  margin: 0 auto;
   }
-  .profile-image {
-    float: right;
-    width: 49%;
-    padding: 0.2em;
-    border: solid #3d4957;
-    border-width: thin;
+.info {
+  text-align: left;
+  display: grid;
+  border-bottom: solid #3d4957;
+  border-width: thin;
   }
-  .main-footer {
-    width:90%;
-    margin: 0 auto;
+.bottomcom {
+  text-align: center;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
   }
-  .info {
-    text-align: left;
-    display: grid;
-    border-bottom: solid #3d4957;
-    border-width: thin;
-  }
-  .bottomcom {
-    text-align: center;
-    margin-bottom: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-  .btmbtn {
-    float: right;
-    position: static;
-    left: +1000px;
+.btmbtn {
+  float: right;
+  position: static;
+  left: +1000px;
 }
 .bottomnav a {
   float: right;
+}
+.bottomnav {
+  padding-bottom: 3em;
+}
+.backtop {
+  text-align: inherit;
+  position: absolute;
+  left: -1000px;
 }
 }

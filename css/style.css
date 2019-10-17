@@ -152,6 +152,36 @@ h1 {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.marketingpage {
+  max-width: 33.333%;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+.travelapp {
+  max-width: 33.333%;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+.photogallery {
+  max-width: 33.333%;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+  }
+.searchpage {
+  max-width: 33.333%;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+.mapoffavoritespots{
+  max-width: 33.333%;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+.calculator {
+  max-width: 33.333%;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
 .main-footer {
   width:80%;
   max-width: 1150px;

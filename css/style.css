@@ -40,9 +40,12 @@ img {
 }
 h1 {
   text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
 h2 {
- text-align: center;
+  text-align: center;
+  color: #3d4957;
 }
 .main-header {
   display: block;
@@ -52,7 +55,8 @@ h2 {
   width: 90%;
 }
 .name {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  font-weight: 600;
   background-color: inherit;
   text-align: center;
 }
@@ -76,22 +80,21 @@ h2 {
 }
 .bottomcom {
   text-align: center;
+  margin-bottom: 2em;
 }
 .info li {
-text-align: center;
-background-color: inherit;
+  text-align: center;
+  background-color: inherit;
 }
 .info {
   padding-left: 0;
+  border-bottom: solid #3d4957;
+  border-width: thin;
 }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
-.bottomnav {
-  width: 100%;
-  display: block;
 }
 .bottomnav ul {
   padding-left: 0;
@@ -117,41 +120,30 @@ background-color: inherit;
     max-width: 1150px;
   }
   .main-header {
-  width:80%;
-  max-width: 1150px;
+    width:80%;
+    max-width: 1150px;
   }
   .centralsection {
-  width: 80%;
-  max-width: 1150px;
+    width: 80%;
+    max-width: 1150px;
   }
   .main-footer {
-  width:80%;
-  max-width: 1150px;
+    width:80%;
+    max-width: 1150px;
   }
 }
 @media (min-width: 768px) {
 
-  .group {
-  width:90%;
-  margin: 0 auto;
-
+  nav {
+    width: 100%;
+    display: block;
+    float:right;
+    padding-top: 0.7em;
   }
-  .main-header {
-  width: 90%;
-  clear: both;
-  }
-  .centralsection {
-  width: 90%;
-  }
-  .marketingpage,
-  .searchpage,
-  .travelapp,
-  .mapoffavoritespots,
-  .photogallery,
-  .calculator {
-    width: 90%;
-    margin: 0 auto;
-    clear:both;
+  li{
+    background-color:inherit;
+    display: inline-block;
+    margin-left: 15px;
   }
   img {
     width:90%,
@@ -159,22 +151,75 @@ background-color: inherit;
   h1 {
     text-align: center;
   }
-  .main-footer {
-  width:90%;
-  margin: 0 auto;
-
+  .body {
+    width:90%;
+    margin: 0 auto;
   }
-
-  .introduction {
-    font-size: 1em;
-    float: none;
-    width: 50%;
-  }
-  .profile-image,
-  .introduction {
+  .name {
+    font-size: 2em;
+    display: grid;
     text-align: center;
-    clear:both;
-    width:100%;
+    font-weight: 600;
   }
-
+  .name2 {
+    float: left;
+  }
+  .main-header {
+    width: 90%;
+    clear: both;
+  }
+  .centralsection {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+.marketingpage,
+.travelapp,
+.photogallery {
+  float: left;
+  width: 49%;
+  }
+.searchpage,
+.mapoffavoritespots,
+.calculator {
+  float: right;
+  width: 49%;
+}
+  .introduction {
+    float:left;
+    width: 49%;
+    text-align: left;
+    margin: 0;
+  }
+  .profile-image {
+    float: right;
+    width: 49%;
+    padding: 0.2em;
+    border: solid #3d4957;
+    border-width: thin;
+  }
+  .main-footer {
+    width:90%;
+    margin: 0 auto;
+  }
+  .info {
+    text-align: left;
+    display: grid;
+    border-bottom: solid #3d4957;
+    border-width: thin;
+  }
+  .bottomcom {
+    text-align: center;
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .btmbtn {
+    float: right;
+    position: static;
+    left: +1000px;
+}
+.bottomnav a {
+  float: right;
+}
 }

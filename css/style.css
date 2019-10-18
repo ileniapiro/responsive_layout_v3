@@ -7,11 +7,14 @@ body {
   margin:0;
   font-family: 'Poppins', sans-serif;
   color: #353c46;
-  background: #e5e7e9;
+  background: #f1f6fa;
 }
 a {
   text-decoration: none;
   color: #353c46;
+}
+a:hover {
+color: #74aff2;
 }
 nav {
   width: 100%;
@@ -33,11 +36,10 @@ p {
   text-align: center;
   font-size: 1em;
 }
-
 img {
     width: 100%;
     text-align: center;
-}
+  }
 h1 {
   text-align: center;
   font-size: 1.5em;
@@ -53,6 +55,7 @@ h2 {
   padding-top: 1em;
   padding-bottom: 1em;
   width: 90%;
+  color: #4c4a4a;
 }
 .name {
   font-size: 1.7em;
@@ -67,7 +70,11 @@ h2 {
   text-align: center;
 }
 .centralsection {
-  background-color: white;
+  background-image: url(../images/paint.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #3d4957;
   padding-right: 1em;
   padding-left: 1em;
   padding-top: 0.5em;
@@ -80,6 +87,8 @@ h2 {
   padding-right: 1em;
 }
 .bottomcom {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 1.3em;
   text-align: center;
   margin-bottom: 2em;
 }
@@ -119,7 +128,8 @@ h2 {
 nav {
   float: right;
   width: 100%;
-  padding: 1.5em;
+  height: 100px;
+  padding: 0.7em 1.5em 1.5em 1.5em;
 }
 li {
   float: right;
@@ -129,11 +139,11 @@ h1 {
   padding-bottom: 1em;
 }
 .name {
+  position: absolute;
+  top: 40px;
+  z-index: 2;
   float: left;
-  font-size: 2em;
-  display: inline;
-  text-align: center;
-  font-weight: 600;
+  padding-left: 2em;
   }
 .main-header {
   width: auto;
@@ -149,8 +159,13 @@ h1 {
   margin-left: 4em;
   }
 .centralsection {
+  background-image: url(../images/paint.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 2em;
   padding-bottom: 2em;
+  border: 2px solid #3d4957;
 }
 .marketingpage {
   max-width: 33.333%;
@@ -182,18 +197,20 @@ h1 {
   padding-right: 0.7em;
   padding-left: 0.7em;
 }
+
+.bottomcom {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 1.5em;
+  padding-left: 20em;
+  padding-right: 20em;
+}
 .main-footer {
   width:80%;
-  max-width: 1150px;
   }
 }
 @media (min-width: 768px) {
 
-.nav {
-  width: 100%;
-  display: block;
-  padding-top: 0.7em;
-  }
+
 li{
   background-color:inherit;
   display: inline-block;
@@ -202,9 +219,14 @@ li{
 h1 {
   text-align: center;
   }
-  p {
-    padding-left: 2.2em;
-    padding-right: 2.2em;
+p {
+  padding-left: 2.2em;
+  padding-right: 2.2em;
+  }
+.nav {
+  width: 100%;
+  display: block;
+  padding-top: 0.7em;
   }
 .name {
   font-size: 2em;
@@ -234,6 +256,11 @@ h1 {
   padding: 0;
   }
 .centralsection {
+  background-image: url(../images/paint.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #3d4957;
   text-align: center;
   margin-left: 1em;
   margin-right: 1em;
@@ -261,10 +288,9 @@ h1 {
   border-width: thin;
   }
 .bottomcom {
+  font-family: 'Dancing Script', sans-serif;
   text-align: center;
   margin-bottom: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
   }
 .btmbtn {
   float: right;
@@ -281,5 +307,6 @@ h1 {
   text-align: inherit;
   position: absolute;
   left: -1000px;
+  height: 0;
 }
 }

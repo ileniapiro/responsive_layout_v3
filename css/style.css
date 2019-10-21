@@ -73,6 +73,7 @@ h4 {
   text-transform: uppercase;
 }
 .introduction {
+  font-size: 0.9em;
   text-align: center;
 }
 .profile-image {
@@ -177,10 +178,13 @@ p {
   border-width: thin;
   }
 .introduction {
+  font-size: 0.9em;
+  line-height: 1.5em;
   float:left;
   width: 49%;
   text-align: left;
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   }
 .centralsection {

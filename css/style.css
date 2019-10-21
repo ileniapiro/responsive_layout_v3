@@ -7,7 +7,7 @@ padding: 0;
 margin:0;
 font-family: 'Poppins', sans-serif;
 color: #353c46;
-background-image: url(../images/mod.jpg);
+background-image: url(../images/rsz_mod.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -139,7 +139,7 @@ clear: both;
 
 @media (min-width: 768px) {
 body {
-background-image: url(../images/mod.jpg);
+background-image: url(../images/rsz_mod.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -244,7 +244,9 @@ height: 0;
 @media (min-width: 1024px) {
 
 body {
-background-image: url(../images/mod.jpg);
+max-width: 1300px;
+margin:auto;
+background-image: url(../images/rsz_mod.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -278,7 +280,7 @@ max-width: 35%;
 margin-right: 4em;
 }
 .introduction {
-font-size: 1.5em;
+font-size: 1.3em;
 max-width: 45%;
 margin-left: 4em;
 }
@@ -293,55 +295,41 @@ border: 2px solid #3d4957;
 }
 .marketingpage {
 max-width: 33.333%;
+min-height: 408px;
 padding-right: 0.7em;
 padding-left: 0.7em;
 }
 .travelapp {
 max-width: 33.333%;
+min-height: 408px;
 padding-right: 0.7em;
 padding-left: 0.7em;
 }
 .photogallery {
 max-width: 33.333%;
+min-height: 408px;
 padding-right: 0.7em;
 padding-left: 0.7em;
 }
 .searchpage {
 max-width: 33.333%;
+min-height: 408px;
 padding-right: 0.7em;
 padding-left: 0.7em;
 }
 .mapoffavoritespots{
 max-width: 33.333%;
+min-height: 408px;
 padding-right: 0.7em;
 padding-left: 0.7em;
 }
 .calculator {
 max-width: 33.333%;
+min-height: 408px;
 padding-right: 0.7em;
 padding-left: 0.7em;
 }
-.imagemarketing {
-border-bottom: 4px solid #ccc;
-border-radius: 6px;
-}
-.imagestravel {
-border-bottom: 4px solid #ccc;
-border-radius: 6px;
-}
-.imagesearch {
-border-bottom: 4px solid #ccc;
-border-radius: 6px;
-}
-.imagegallery {
-border-bottom: 4px solid #ccc;
-border-radius: 6px;
-}
-.imagemapspots {
-border-bottom: 4px solid #ccc;
-border-radius: 6px;
-}
-.imagecalculator {
+.centralsection img {
 border-bottom: 4px solid #ccc;
 border-radius: 6px;
 }

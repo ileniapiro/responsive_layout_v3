@@ -26,7 +26,6 @@ li {
   list-style-type: none;
   background-color: white;
   text-align: center;
-  text-transform: uppercase;
   font-size: 0.8em;
   margin-bottom: 15px;
 }
@@ -42,14 +41,19 @@ img {
     width: 100%;
     text-align: center;
   }
-h1 {
-  text-align: center;
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
+
 h2 {
   text-align: center;
   color: #3d4957;
+}
+h3 {
+ text-transform: uppercase;
+ text-align: center;
+ font-size: 1.5em;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .main-header {
   display: block;
@@ -64,6 +68,9 @@ h2 {
   font-weight: 600;
   background-color: inherit;
   text-align: center;
+}
+.tag1 {
+  text-transform: uppercase;
 }
 .introduction {
   text-align: center;
@@ -106,6 +113,7 @@ h2 {
 .bottomnav ul {
   padding-left: 0;
   text-align: center;
+  float: left;
 }
 .btmbtn {
   position: absolute;
@@ -118,6 +126,7 @@ h2 {
 }
 .backtop {
   float:right;
+  margin-top: 5px;
 }
 .clearfix:after {
   content: "";
@@ -125,6 +134,104 @@ h2 {
   clear: both;
 }
 /* Media Queries --------------------*/
+
+@media (min-width: 768px) {
+
+li{
+  background-color:inherit;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 1em;
+  margin-top: 0.5em;
+  }
+p {
+  padding-left: 2.2em;
+  padding-right: 2.2em;
+  }
+  ol {
+    float: right;
+    margin-top: 0;
+  }
+.nav {
+  width: 100%;
+  display: block;
+  margin-top: 0.7em;;
+  }
+.name {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+  }
+
+.main-header {
+  width: 90%;
+  clear: both;
+  }
+.profile-image {
+  float: right;
+  width: 49%;
+  padding: 0.2em;
+  border: solid #3d4957;
+  border-width: thin;
+  }
+.introduction {
+  float:left;
+  width: 49%;
+  text-align: left;
+  margin-top: 0;
+  padding: 0;
+  }
+.centralsection {
+  background-image: url(../images/paint.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #3d4957;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+.marketingpage,
+.travelapp,
+.photogallery {
+  float: left;
+  width: 49%;
+  }
+.searchpage,
+.mapoffavoritespots,
+.calculator {
+  float: right;
+  width: 49%;
+}
+.main-footer {
+  width:90%;
+  margin: 0 auto;
+  }
+.info {
+  line-height: 1em;
+  display: grid;
+  padding-bottom: 1em;
+  }
+.bottomcom {
+  font-family: 'Dancing Script', sans-serif;
+  text-align: center;
+  margin-bottom: 1.5em;
+  }
+.btmbtn {
+  position: static;
+  left: +1000px;
+}
+
+.backtop {
+  text-align: inherit;
+  position: absolute;
+  left: -1000px;
+  height: 0;
+}
+}
+
 @media (min-width: 1024px) {
 
 nav {
@@ -133,21 +240,20 @@ nav {
   height: 100px;
   padding: 0.7em 1.5em 1.5em 1.5em;
 }
-li {
+nav ul {
+  max-width: 20%;
+  display: inline-block;
   float: right;
   margin-right: 1em;
-
 }
 h1 {
   padding-bottom: 1em;
 }
 .name {
-  position: absolute;
-  top: 40px;
-  z-index: 2;
   float: left;
+  padding-top: 0.5em;
   padding-left: 2em;
-  }
+}
 .main-header {
   width: auto;
   clear: both;
@@ -200,116 +306,56 @@ h1 {
   padding-right: 0.7em;
   padding-left: 0.7em;
 }
-
+.imagemarketing {
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.imagestravel {
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.imagesearch {
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.imagegallery {
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.imagemapspots {
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.imagecalculator {
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.imagemarketing:hover {
+  border-color: #082931;
+}
+.imagestravel:hover {
+  border-color: #082931;
+}
+.imagesearch:hover {
+  border-color: #082931;
+}
+.imagegallery:hover {
+  border-color: #082931;
+}
+.imagemapspots:hover {
+  border-color: #082931;
+}
+.imagecalculator:hover {
+  border-color: #082931;
+}
 .bottomcom {
   font-family: 'Dancing Script', sans-serif;
   font-size: 1.5em;
-  padding-left: 20em;
-  padding-right: 20em;
 }
-.main-footer {
-  width:80%;
-  }
-}
-@media (min-width: 768px) {
-
-li{
-  background-color:inherit;
-  display: inline-block;
-  margin-left: 15px;
-  font-size: 1em;
-  }
-h1 {
-  text-align: center;
-  }
-p {
-  padding-left: 2.2em;
-  padding-right: 2.2em;
-  }
-.nav {
-  width: 100%;
-  display: block;
-  padding-top: 0.7em;
-  }
-.name {
-  font-size: 2em;
-  display: grid;
-  text-align: center;
-  font-weight: 600;
-  }
-.name2 {
-  float: left;
-  }
-.main-header {
-  width: 90%;
-  clear: both;
-  }
-.profile-image {
-  float: right;
-  width: 49%;
-  padding: 0.2em;
-  border: solid #3d4957;
-  border-width: thin;
-  }
-.introduction {
-  float:left;
-  width: 49%;
-  text-align: left;
-  margin-top: 0;
-  padding: 0;
-  }
-.centralsection {
-  background-image: url(../images/paint.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid #3d4957;
-  text-align: center;
-  margin-left: 1em;
-  margin-right: 1em;
-  }
-.marketingpage,
-.travelapp,
-.photogallery {
-  float: left;
-  width: 49%;
-  }
-.searchpage,
-.mapoffavoritespots,
-.calculator {
-  float: right;
-  width: 49%;
-}
-.main-footer {
-  width:90%;
-  margin: 0 auto;
-  }
 .info {
-  text-align: left;
-  display: grid;
-  border-bottom: solid #3d4957;
-  border-width: thin;
+max-width: 100%;
+}
+.main-footer {
+  width: 90%;
   }
-.bottomcom {
-  font-family: 'Dancing Script', sans-serif;
-  text-align: center;
-  margin-bottom: 2em;
-  }
-.btmbtn {
-  float: right;
-  position: static;
-  left: +1000px;
-}
-.bottomnav a {
-  float: right;
-}
-.bottomnav {
-  padding-bottom: 3em;
-}
-.backtop {
-  text-align: inherit;
-  position: absolute;
-  left: -1000px;
-  height: 0;
-}
 }

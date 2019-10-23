@@ -57,6 +57,7 @@ h4 {
 margin-top: 0;
 margin-bottom: 0;
 }
+
 .main-header {
 display: block;
 margin: auto;
@@ -93,9 +94,16 @@ padding-top: 0.5em;
 margin-left: 0.5em;
 margin-right: 0.5em;
 }
-.main-footer {
-padding-left: 1em;
-padding-right: 1em;
+.pskills {
+font-size: 1em;
+text-align: center;
+margin-bottom: 2em;
+}
+.vector {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 .bottomcom {
 font-family: 'Dancing Script', sans-serif;
@@ -169,9 +177,8 @@ text-align: center;
 font-size: 2em;
 font-weight: 600;
 margin-bottom: 0;
-margin-top: 0;
+margin-top: 0.8em;
 }
-
 .main-header {
 width: 90%;
 clear: both;
@@ -224,6 +231,12 @@ line-height: 1em;
 display: grid;
 padding-bottom: 1em;
 }
+.vector {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
 .bottomcom {
 font-family: 'Dancing Script', sans-serif;
 text-align: center;
@@ -258,18 +271,18 @@ height: 100px;
 padding: 0.7em 1.5em 1.5em 1.5em;
 }
 nav ul {
-max-width: 20%;
+max-width: 30%;
 display: inline-block;
 float: right;
-margin-right: 1em;
 }
 h1 {
 padding-bottom: 1em;
 }
 .name {
 float: left;
-padding-top: 0.5em;
+padding-top: 0;
 padding-left: 2em;
+margin-top: 0.3em;
 }
 .main-header {
 width: auto;
@@ -350,6 +363,12 @@ border-color: #082931;
 }
 .imagecalculator:hover {
 border-color: #082931;
+}
+.vector {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
 }
 .bottomcom {
 font-family: 'Dancing Script', sans-serif;

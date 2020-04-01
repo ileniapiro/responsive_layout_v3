@@ -1,12 +1,12 @@
-# Responsive Layout of a Presentation Page
+# Responsive Layout Portfolio
 
-This is an example of Responsive Layout of a Presentation Page
+This is an example of Responsive Layout Portfolio
 
 ## Responsive website
 
 As you can see from the image below the website is fully responsive.
 
-![Online Registration Form](https://github.com/ileniapiro/responsive_layout_v3/raw/master/Responsive_Layout.png)
+![Responsive Layout Portfolio](https://github.com/ileniapiro/responsive_layout_v3/raw/master/Responsive_Layout.png)
 
 ## Author
 
